@@ -9,7 +9,14 @@
                     "Port": 80
                 }
             ],
-            "UpstreamPathTemplate": "/s1/wf"
+            "UpstreamPathTemplate": "/s1/wf",
+            "RateLimitOptions": {
+                "ClientWhitelist": [],
+                "EnableRateLimiting": true,
+                "Period": "1s",
+                "PeriodTimespan": 1,
+                "Limit": 1
+            }
         }
     ],
     "GlobalConfiguration": {
